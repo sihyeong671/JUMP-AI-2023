@@ -1,0 +1,6 @@
+data/
+csv/
+
+.vscode/
+*/__pycache__/
+.python-version
