@@ -22,6 +22,10 @@ transformers = "*"
 timm = "*"
 pytorch-ignite = "*"
 rdkit = "*"
+torch-geometric = "*"
+tqdm = "*"
+xgboost = "*"
+optuna = "*"
 
 [dev-packages]
 
