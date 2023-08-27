@@ -1,5 +1,7 @@
 data/
 csv/
+ckpt/
+wandb/
 
 .vscode/
 __pycache__/

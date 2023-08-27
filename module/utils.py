@@ -24,3 +24,4 @@ class Config:
     self.DETAIL = kwargs["detail"]
     self.TRAIN_DATAPATH = kwargs["train_datapath"]
     self.TEST_DATAPATH = kwargs["test_datapath"]
+    self.DEVICE = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")

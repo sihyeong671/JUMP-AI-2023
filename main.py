@@ -12,11 +12,11 @@ if __name__ == "__main__":
   parser = argparse.ArgumentParser()
   
   parser.add_argument('--seed', type=int, default=777)
-  parser.add_argument('--epochs', type=int, default=20)
+  parser.add_argument('--epochs', type=int, default=10)
   parser.add_argument('--lr', type=float, default=3e-4)
   parser.add_argument('--num_workers', type=int, default=4) 
-  parser.add_argument('--batch_size', type=int, default=1)
-  parser.add_argument('--model_name', type=str, default="ConvNext")
+  parser.add_argument('--batch_size', type=int, default=32)
+  parser.add_argument('--model_name', type=str, default="MLP")
   parser.add_argument('--train_datapath', type=str, default="data/train.csv")
   parser.add_argument('--test_datapath', type=str, default="data/test.csv")
   parser.add_argument('--detail', default="v0")
@@ -27,6 +27,6 @@ if __name__ == "__main__":
   seed_everything(CONFIG.SEED)
   
   trainer = Trainer(CONFIG)
-  trainer.setup_data()
+  trainer.setup()
   
-  print(next(iter(trainer.train_dataloader))[0].shape)
+  trainer.train()
