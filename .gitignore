@@ -2,6 +2,7 @@ data/
 csv/
 ckpt/
 wandb/
+model/
 
 .vscode/
 __pycache__/
