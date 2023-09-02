@@ -2,6 +2,8 @@ data/
 /train_result
 /test_result
 csv/
+ckpt/
+wandb/
 
 .DS_Store
 .vscode/

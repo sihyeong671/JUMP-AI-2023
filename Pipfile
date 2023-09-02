@@ -26,6 +26,7 @@ torch-geometric = "*"
 tqdm = "*"
 xgboost = "*"
 optuna = "*"
+wandb = "*"
 
 [dev-packages]
 

@@ -18,9 +18,14 @@ class Config:
     self.SEED = kwargs["seed"]
     self.EPOCHS = kwargs["epochs"]
     self.LR = kwargs["lr"]
+    self.MODE = kwargs["mode"]
+    
     self.NUM_WORKERS = kwargs["num_workers"]
     self.BATCH_SIZE = kwargs["batch_size"]
     self.MODEL_NAME = kwargs["model_name"]
     self.DETAIL = kwargs["detail"]
     self.TRAIN_DATAPATH = kwargs["train_datapath"]
     self.TEST_DATAPATH = kwargs["test_datapath"]
+    self.SUBMIT_DATAPATH = kwargs["submit_datapath"]
+    
+    self.DEVICE = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
