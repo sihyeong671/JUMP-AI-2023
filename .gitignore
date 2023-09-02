@@ -1,6 +1,9 @@
 data/
+/train_result
+/test_result
 csv/
 
+.DS_Store
 .vscode/
 __pycache__/
 *.csv
