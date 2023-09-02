@@ -1,9 +1,12 @@
 data/
+/train_result
+/test_result
 csv/
 ckpt/
 wandb/
 model/
 
+.DS_Store
 .vscode/
 __pycache__/
 *.csv
