@@ -11,3 +11,4 @@ model/
 __pycache__/
 *.csv
 .python-version
+catboost_info/
