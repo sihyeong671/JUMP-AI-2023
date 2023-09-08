@@ -28,6 +28,7 @@ xgboost = "*"
 optuna = "*"
 wandb = "*"
 catboost = "*"
+deepchem = {version = "*", extras = ["torch"]}
 
 [dev-packages]
 
